@@ -55,25 +55,6 @@ Building this project helped me understand:
 - Responsive design principles using Salesforce design system
 - Test-driven development with Apex test classes
 
-## Setup Instructions
-
-1. Clone this repository:
-```bash
-git clone https://github.com/YOUR-USERNAME/customer-task-manager.git
-```
-
-2. Authorize your Salesforce org:
-```bash
-sfdx auth:web:login -a yourOrgAlias
-```
-
-3. Deploy the code to your org:
-```bash
-sfdx force:source:deploy -p force-app/main/default
-```
-
-4. Assign the permission set (if applicable) and open the app from App Launcher
-
 ## Project Structure
 
 ```
@@ -92,17 +73,6 @@ force-app/
     └── CustomerTask__c/
 ```
 
-## Testing
-
-All Apex classes have comprehensive test coverage:
-- TaskController: 100% coverage
-- Wrapper classes: 100% coverage
-
-Run tests using:
-```bash
-sfdx force:apex:test:run -n TaskControllerTest -r human
-```
-
 ## Future Enhancements
 
 Some features I'm planning to add:
@@ -112,16 +82,4 @@ Some features I'm planning to add:
 - Export tasks to CSV
 - Dashboard with task analytics
 
-## Contact
-
-Feel free to reach out if you have questions or suggestions about this project.
-
----
-
 **Note**: This is a learning project I built to practice Salesforce development. It demonstrates real-world development patterns and best practices, though it's not intended for production use without further customization.
-
----
-
-### Acknowledgments
-
-Thanks to the Salesforce developer community and Trailhead for the learning resources that helped me build this project.
